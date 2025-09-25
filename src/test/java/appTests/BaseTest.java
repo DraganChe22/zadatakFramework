@@ -18,7 +18,11 @@ public class BaseTest {
 
     @BeforeClass
     public static void beforeAll() {
+
         driver = new ChromeDriver();
+
+
+
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 //        max time to wait for a page load
