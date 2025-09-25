@@ -24,8 +24,15 @@ public class ePlanetaFlow extends BaseTest {
     AddToCart addToCart = new AddToCart(driver, Duration.ofSeconds(10));
 
 
+    @Test
+    public void eeeee() {
 
+            searchProduct.searchAction();
+            selectProduct.clickOnProduct();
 
+            addToCart.addToCartAction();
+            
+    }
 
     @Test
     public void flow() throws InterruptedException {
@@ -34,6 +41,13 @@ public class ePlanetaFlow extends BaseTest {
         Thread.sleep(10000);
         addToCart.addToCartAction();
         Thread.sleep(10000);
+
+
+
+
+
+
+
 
 //        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 //        WebElement modal = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Proizvod je dodat u korpu')]")));
